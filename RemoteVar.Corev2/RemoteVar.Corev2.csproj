@@ -21,4 +21,10 @@
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="RemoteVar.Corev2.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

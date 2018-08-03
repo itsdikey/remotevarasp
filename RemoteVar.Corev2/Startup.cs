@@ -69,6 +69,7 @@ namespace RemoteVar.Corev2
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -103,6 +104,14 @@ namespace RemoteVar.Corev2
                     name: "default",
                     template: "{controller=Home}/{action=Index}");
             });
+
+
+            var serviceScopeFactory = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>();
+            using (var serviceScope = serviceScopeFactory.CreateScope())
+            {
+                var dbContext = serviceScope.ServiceProvider.GetService<RemoteVarContext>();
+                dbContext.Database.EnsureCreated();
+            }
         }
     }
 }

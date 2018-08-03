@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RemoteVar.Corev2</name>
+    </assembly>
+    <members>
+        <member name="M:RemoteVar.Corev2.Controllers.VariablesController.App(System.String,System.String,System.String)">
+            <summary>
+            Gets the variable list for the application
+            </summary>
+            <remarks>
+            Usage:
+            
+                GET /api/variables?id=xxx-xxx-xxx
+            
+            </remarks>
+            <returns>The JSON for the specified application</returns>
+            <response code="200">Returns the JSON for the application variables</response>
+            <response code="400">No application with specified ID was found</response>
+            <param name="id">Id of application</param>
+            <param name="mode">test for development mode and rel for release mode</param>
+            <param name="parsing">Specifies the conversion of variable values to their specific types</param>
+        </member>
+    </members>
+</doc>

@@ -78,7 +78,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("        <div class=\"col-md-4 flex-center\">\r\n            <a href=\"/swagger\" style=\"width: 250px\" class=\"btn btn-primary\">Read API documentation</a>\r\n        </div>\r\n        <div class=\"col-md-4 flex-center\">\r\n            ");
             EndContext();
             BeginContext(577, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c91a96b3f82240a6b7dbf128e3bb6004", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ec3c9be5d9443c38ab8b4ae6b4d923f", async() => {
                 BeginContext(663, 19, true);
                 WriteLiteral("My Application List");
                 EndContext();
@@ -114,7 +114,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("        <div class=\"col-md-4 flex-center\">\r\n            <a href=\"/swagger\" style=\"width: 250px\" class=\"btn btn-primary\">Read API documentation</a>\r\n        </div>\r\n        <div class=\"col-md-4 flex-center\">\r\n            ");
             EndContext();
             BeginContext(1147, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65eec6c749d445dda8a3409beb0580f4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "972f3de884a846dd88a34c99d81b1010", async() => {
                 BeginContext(1241, 8, true);
                 WriteLiteral("Register");
                 EndContext();
@@ -140,7 +140,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n        </div>\r\n        <div class=\"col-md-4 flex-center\">\r\n            ");
             EndContext();
             BeginContext(1327, 98, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "900aa3f9426c4f9881dd62346ccb295e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c624d2014cef407292bda3e0a0fcc138", async() => {
                 BeginContext(1416, 5, true);
                 WriteLiteral("Login");
                 EndContext();

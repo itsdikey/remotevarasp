@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="RemoteVarCore" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\garmu\\source\\repos\\RemoteVar\.Corev2\\RemoteVar\.Corev2\\obj\\Debug\\netcoreapp2\.1\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

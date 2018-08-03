@@ -63,7 +63,7 @@ using RemoteVar.Corev2.Models;
             WriteLiteral("\r\n<div class=\"flex-center\" style=\"height: 100vh;\">\r\n    <div class=\"flex-center\" style=\"background-color: ghostwhite; padding: 15px; height: 100vh\">\r\n        <div style=\"margin-top: 24px\">\r\n            <h3 style=\"text-align: center\">    ");
             EndContext();
             BeginContext(310, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f81f44af7f84f48858f94eaaf7452bc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aebbd29750974974955f2ff2559d7201", async() => {
                 BeginContext(332, 10, true);
                 WriteLiteral("#RemoteVar");
                 EndContext();
@@ -85,7 +85,7 @@ using RemoteVar.Corev2.Models;
             WriteLiteral("</h3>\r\n        \r\n            <img src=\"images/Banner.png\" style=\"box-shadow: 5px 10px #F2F2F3\"/>\r\n            ");
             EndContext();
             BeginContext(456, 41, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "981e549210bd4c698a258ff3d038b560", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d34720cc88074af2b4f11d75aec5000d", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

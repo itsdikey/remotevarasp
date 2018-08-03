@@ -38,3 +38,4 @@ C:\Users\garmu\source\repos\RemoteVar.Corev2\RemoteVar.Corev2\obj\Debug\netcorea
 C:\Users\garmu\source\repos\RemoteVar.Corev2\RemoteVar.Corev2\obj\Debug\netcoreapp2.1\RemoteVar.Corev2.xml
 C:\Users\garmu\source\repos\RemoteVar.Corev2\RemoteVar.Corev2\obj\Debug\netcoreapp2.1\RemoteVar.Corev2.pdb
 C:\Users\garmu\source\repos\RemoteVar.Corev2\RemoteVar.Corev2\obj\Debug\netcoreapp2.1\RemoteVar.Corev2.csproj.CopyComplete
+C:\Users\garmu\source\repos\RemoteVar.Corev2\RemoteVar.Corev2\obj\Debug\netcoreapp2.1\RemoteVar.Corev2.csprojAssemblyReference.cache
