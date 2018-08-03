@@ -1,0 +1,36 @@
+﻿@model RemoteVar.Corev2.Models.Account.RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+    ViewData["Footer"] = false;
+}
+
+<div class="row text-center" style="vertical-align: central; background-color: #f0f0f0">
+    <form method="post" asp-action="RegisterNewUser" asp-controller="Account">
+        <div class="login-form">
+            <h2>Register</h2>
+            <div class="form-group ">
+                <input type="text" asp-for="Email" class="form-control" placeholder="Email" />
+                <i class="fa fa-user"></i>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group log-status">
+                <input type="password" class="form-control" asp-for="Password" placeholder="Password" />
+                <i class="fa fa-lock"></i>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group log-status">
+                <input type="password" class="form-control" asp-for="ConfirmPassword" placeholder="Confirm Password" />
+                <i class="fa fa-lock"></i>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <span class="alert">Invalid Credentials</span>
+            <button type="submit" class="log-btn">Register</button>
+        </div>
+    </form>
+    
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

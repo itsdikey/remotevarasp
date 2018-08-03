@@ -1,0 +1,72 @@
+﻿@using RemoteVar.Corev2.Models.Application
+@model ApplicationListViewModel
+@{
+    ViewData["Title"] = "List";
+}
+
+
+<div class="row">
+    <h2>
+        <a asp-action="Index" asp-controller="Home">#RV</a> > #Applications Layer
+    </h2>
+
+</div>
+
+<div class="container body-container">
+   @await Html.PartialAsync("_AddAppPartial", new AddAppModel())
+
+    <div class="row" style="margin-top: 15px">
+        <div class="col-md-9" style="background-color:ghostwhite">
+            <table class="table custom-list" style="width:100%">
+                <thead>
+                    <tr>
+                        <td class="text-center" style="width:10%">
+                            <h3>
+                                #
+                            </h3>
+                        </td>
+                        <td class="text-center">
+                            <h3>
+                                App Id
+                            </h3>
+                        </td>
+                        <td class="text-center">
+                            <h3>
+                                App Name
+                            </h3>
+                        </td>
+                        <td colspan="2" class="text-center">
+                            <h3>
+                                Actions
+                            </h3>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                @for (int i=0; i< Model.Applications.Count; i++)
+                {
+                    Application current = Model.Applications[i];
+                      <tr>
+                            <td>
+                                @((i + 1).ToString("D6"))
+                            </td>
+                            <td>
+                                <a href="#" class="appId">
+                                    @current.AppId
+                                </a>
+                            </td>
+                            <td>
+                                @current.AppName
+                            </td>
+                            <td>
+                                <a href="/App?id=@current.AppId" class="btn btn-primary">Variables</a>
+
+                                <a href="/App/Delete?id=@current.AppId" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

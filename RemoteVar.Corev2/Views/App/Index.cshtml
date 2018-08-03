@@ -1,0 +1,99 @@
+﻿@using RemoteVar.Corev2.Models.Application
+@model VariableListViewModel
+@{
+    ViewData["Title"] = $"Variables for {Model.Application.AppName}";
+}
+
+
+
+<div class="row">
+    <h2>
+        <a href="/App/List">#RV</a> > #Application Layer
+    </h2>
+
+</div>
+
+<div class="container body-container">
+ @await Html.PartialAsync("_AddVariablePartial", new AddVariableModel(){AppId = Model.Application.AppId})
+
+    <div class="row" style="margin-top: 15px">
+        <div class="col-md-9" style="background-color:ghostwhite">
+            <table class="table custom-list" style="width:100%">
+                <thead>
+                    <tr>
+                        <td class="text-center" style="width:10%">
+                            <h4>
+                                Variable Name
+                            </h4>
+                        </td>
+                        <td class="text-center">
+                            <h4>
+                                Variable Value
+                            </h4>
+                        </td>
+                        <td class="text-center">
+                            <h4>
+                                Variable Type
+                            </h4>
+                        </td>
+                        <td class="text-center">
+                            <h4>
+                                Test Mode
+                            </h4>
+                        </td>
+                        <td colspan="2" class="text-center">
+                            <h4>
+                                Actions
+                            </h4>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var current in Model.Variables)
+                {
+                    <tr hidden-id="@current.Id" class="valueTableRow">
+                        <td>
+                            @current.VariableName
+                        </td>
+                        <td class="col-variable-value" hidden-id="@current.Id">
+                            @current.VariableValue
+                        </td>
+                        <td>
+                            @current.VariableType
+                        </td>
+
+                        <td>
+                            @if (current.IsTestMode)
+                            { 
+                                   <i class="fa fa-check"></i>
+                            }
+
+                        </td>
+                        <td>
+                            <a href="#" hidden-id="@current.Id" hidden-name="@current.VariableName" class="btn btn-primary updateValueBtn">Update</a>
+
+                            <a href="#" hidden-id="@current.Id" class="btn btn-danger deleteValueBtn">Delete</a>
+                        </td>
+                    </tr>
+                }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="overlayPage" class="overlay">
+    <div class="popup">
+        <h2>Update Value</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <div class="input-group">
+                <span class="input-group-addon" id="popup-addon">Value:</span>
+                <input id="newValue" type="text" class="form-control" placeholder="New Value" aria-describedby="popup-addon">
+            </div>
+            <button type="button" id="updateRequestBtn" class="btn btn-warning pull-right" style="margin-top: 15px">Update</button>
+        </div>
+    </div>
+</div>

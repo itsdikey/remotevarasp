@@ -1,0 +1,22 @@
+﻿@model AddAppModel
+ <div class="row">
+    <div class="col-md-offset-6 col-md-3">
+        <button href="#" id="newAppBtn" class="btn btn-primary pull-right">New Application</button>
+    </div>
+</div>
+<div id="addApp" class="row">
+    <div class="col-md-offset-6 col-md-3">
+        <form method="post" asp-action="AddApp" asp-controller="App">
+            
+            <div class="input-group">
+                <input type="text" class="form-control" asp-for="AppName" placeholder="Application Name" style="height: 34px"/>
+                <span class="input-group-btn" id="basic-addon1">
+                    <button type="submit" class="btn btn-success">ADD</button>
+                    <button id="cancelappbtn" type="button" class="btn btn-danger">x</button>
+                </span>
+            </div>
+        </form>
+
+    </div>
+
+</div>

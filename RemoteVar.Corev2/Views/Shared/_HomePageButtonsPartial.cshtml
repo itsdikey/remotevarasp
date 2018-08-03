@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<div class="row" style="margin-top: 20px">
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <div class="col-md-4 flex-center">
+            <a href="/swagger" style="width: 250px" class="btn btn-primary">Read API documentation</a>
+        </div>
+        <div class="col-md-4 flex-center">
+            <a asp-action="List" asp-controller="App" style="width: 250px" class="btn btn-danger">My Application List</a>
+        </div>
+        <div class="col-md-4 flex-center">
+            <a href="/File/Download?filename=RemoteVar.unitypackage" style="width: 250px" class="btn btn-info">Download Unity Package</a>
+        </div>
+    }
+    else
+    {
+        <div class="col-md-4 flex-center">
+            <a href="/swagger" style="width: 250px" class="btn btn-primary">Read API documentation</a>
+        </div>
+        <div class="col-md-4 flex-center">
+            <a asp-action="Register" asp-controller="Account" style="width: 250px" class="btn btn-danger">Register</a>
+        </div>
+        <div class="col-md-4 flex-center">
+            <a asp-action="Login" asp-controller="Account" style="width: 250px" class="btn btn-info">Login</a>
+        </div>
+    }
+  
+       
+    </div>
